@@ -1,0 +1,451 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth
+}
+section{
+    display: flex;
+}
+section .leftsec{
+    background-color: #162a43;
+    width: 20%;
+    padding-left: 10px;
+    /* box-shadow: 1px 1px 10px gray; */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.8);
+    padding: 5vh 2vh;
+}
+
+.leftsec .logo{
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.leftsec .logo img{
+    width: 20vh;
+    height: 5vh;
+}
+/* .leftsec .logo h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bolder;
+} */
+
+.leftsec .secbth button{
+    display: flex;
+    background-color: transparent;
+    flex-direction: row;
+    gap: 2vh;
+    width: 90%;
+    height: 5vh;
+    border: none;
+    border-radius: 20px;
+    align-items: center;
+    margin-bottom: 3vh;
+    padding: 2vh;
+    cursor: pointer;
+}
+
+.leftsec .secbth button:hover{
+    background-color: rgb(0, 0, 0);
+}
+
+.leftsec .secbth a{
+   text-decoration: none; 
+}
+
+.leftsec .secbth button p{
+    font-size: 19px;
+    font-family: 'Poppins';
+    color: white;
+    
+}
+
+.leftsec .secbth svg{
+    width: 35px;
+    height: 25px;
+    font-weight: 800;
+    color: white;
+}
+
+/* @media(max-width: 700px){
+  section .leftsec{
+    text-align: center;
+    padding: 0;
+  }
+  section .leftsec .logo{
+    width: 7px;
+    
+  }
+} */
+
+section .middlesec{
+    /* display: inline-block; */
+    width: 100%;
+}
+
+.topmiddle{
+    background-color: rgb(226, 223, 223);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    height: 15vh;
+    align-items: center;
+    width: 100%;
+    padding: 5vh;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    
+}
+
+.searchBox{
+    position: relative;
+    display: flex;
+    align-items: center;
+    border: 1px solid lightgray;
+    border-radius: 20px;
+    padding: 2vh;
+    transition: all 0.3s ease;
+}
+
+.searchBox:focus-within{
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+    border: 1px solid rgba(81, 203, 238, 1);
+}
+
+.searchBox input{
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 16px;
+    background-color: transparent;
+}
+
+.searchBox svg{
+    position: absolute;
+    right: 15px;
+    width: 20px;
+    height: 20px;
+    color: gray;
+}
+
+.addbtn button{
+    padding: 10px 20px;
+    background-color: blue;
+    margin-left: 10vh;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.addbthn button:hover {
+    background-color: rgb(72, 72, 163);
+}
+
+.downm{
+    display: flex;
+    align-content: space-between;
+
+}
+.bookdisplay{
+    /* display: block; */
+    /* width: 100%; */
+    flex-direction: column;
+    flex: 2;
+    background-color: lightgray;
+}
+
+#recommendation{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2vh;
+  margin: 5vh;
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.downmiddle .section-header {
+    grid-column: span 4;/*  Make the header span all columns */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.downmiddle .section-header h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+.downmiddle .section-header button {
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.downmiddle .section-header button:hover {
+    background-color: rgb(72, 72, 163);
+}
+
+.downmiddle .candide{
+    margin-bottom: 3vh;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    gap: 2vh;
+    padding: 1vh;
+    box-shadow: 1px 1px 10px gray;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+.downmiddle .candide:hover{
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+}
+
+.middlesec .downmiddle .candide img{
+    width: 80%;
+    border-radius: 10px;
+    margin-bottom: 1vh;
+}
+
+.middlesec .downmiddle .candide .candide-text h2{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 800;
+    margin-bottom: 0.5vh;
+    text-align: center;
+}
+
+.middlesec .downmiddle .candide .candide-text p{
+    text-align: center;
+    margin-bottom: 1vh;
+    color: gray;
+}
+
+.middlesec .downmiddle .candide .candide-text .btn{
+    display: flex;
+    justify-content: center;
+}
+
+.middlesec .downmiddle .candide .candide-text .status{
+  display: flex;
+  justify-content: center;
+  margin: 1vh;
+}
+.middlesec .downmiddle .candide .candide-text .mark-as-read{
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 70%;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;    
+}
+
+.middlesec .downmiddle .candide .candide-text .delete{
+    background-color: #e53935;
+    color: white;
+    border: none;
+    padding: 6px 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+}
+
+.middlesec .downmiddle .candide .candide-text .editbth{
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 6px 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+}
+
+
+.middlesec .downmiddle .candide .candide-text .mark-as-read:hover{
+    background-color: rgb(72, 72, 163);
+}
+
+.preview-panel{
+    background-color: rgb(3, 3, 43);
+    text-align: center;
+    width: 25%;
+    padding: 10vh 4vh;
+}
+
+.preview-panel img {
+  width: 75%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10vh;
+}
+
+.preview-panel h2 {
+  font-size: 30px;
+  font-family: cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: wheat;
+  margin-bottom: 8px;
+}
+
+.preview-panel p {
+  margin: 6px 0;
+  color: rgb(179, 165, 141);
+  font-size: 18px;
+  line-height: 1.4;
+  top: 20vh;
+}
+
+.preview-panel .read{
+    padding: 3vh;
+    background-color: #4caf50;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2vh;
+    margin-top: 5vh;
+    border-radius: 5vh;
+}
+
+.preview .read:hover{
+    background: #80e283;
+}
+
+.categorySec{
+    background-color: white;
+    margin: 5vh;
+    padding: 3vh;
+    border-radius: 20px;
+    
+}
+.categorysec {
+  /* margin: 5vh; */
+  border-radius: 20px;
+  
+}
+
+.categorySec .headerSection{
+    grid-column: span 4;/*  Make the header span all columns */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.categorySec .categotyBtn {
+  display: flex;
+  /* gap: 10px; */
+  align-items: center;
+  width: 100%;
+}
+.categoryButton {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 20px;
+  background: #f0f0f0;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.categoryButton.active {
+  background: #3b82f6;
+  color: white;
+}
+
+.categoryButton:hover {
+  background: #3b82f6;
+  color: white;
+}
+
+.categoryBooks {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2vh;
+  text-align: center;
+}
+
+.book-card{
+    margin-bottom: 3vh;
+    /* width: 20vh; */
+    padding: 1vh;
+    box-shadow: 1px 1px 10px gray;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.8);
+}
+
+.book-card:hover{
+    box-shadow: 0 4px 12px rgba(126, 105, 105, 0.2);
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+}
+
+.book-card img{
+    width: 80%;
+    border-radius: 10px;
+    margin-bottom: 1vh;
+}
+
+.book-card p{
+    text-align: center;
+    margin-bottom: 1vh;
+    color: gray;
+}
+
+.catbtn{
+    display: flex;
+    justify-content: center;
+}
+
+.readbtn {
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.readbtn:hover {
+    background-color: rgb(72, 72, 163);
+}
+
+.deletebtn{
+    background-color: #e53935;
+    color: white;
+    border: none;
+    padding: 6px 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 8px;
+    margin-left: 8px;
+}
+
+.editbtn{
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 6px 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 8px;
+    margin-left: 8px;
+}
+
