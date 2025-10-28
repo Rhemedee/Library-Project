@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Book</title>
+    <link rel="stylesheet" href="../css/addbook.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <div class="backBtn">
+        <a href="../index.html">
+            <button>Back</button>
+        </a>
+    </div>
+    
+    <div class="container">
+        <div class="logo">
+            <img src="../image/newlogo.jpeg" alt="logo">
+        </div>
+        
+        <div class="addBox">
+            <h1 class="title">Add Books Page</h1>
+
+            <form action="">
+                <input type="text" placeholder="Book Title" class="input" id="title" required>
+                <input type="text" placeholder="Author" class="input" id="author" required>
+                <input type="text" placeholder="Category" class="input" id="category" required>
+                <input type="date" placeholder="Year" id="year" required>
+                <input type="text" placeholder="Description" id="description" required>
+                <input type="file" placeholder="Choose Book Cover" class="input" id="cover" required>    
+                <button class="button" type="submit" id="addBookBtn">Add Book</button>
+            </form>
+
+            <!-- me -->
+        </div>
+    </div>
+
+    <script src="../javascript/addbook.js"></script>>
+</body>
+</html>
